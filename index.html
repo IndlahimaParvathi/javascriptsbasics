@@ -8,8 +8,8 @@
             var startNumber = 0;
             function onClickAdd() {
                 debugger;
-                if (counter == 0) {
-                    startNumber = parseInt(document.getElementById("txtStartNumber").value);
+                if (counter == 0){
+                    startNumber = parseInt(document.getElementById("txtstartNumber").value);
                 }
                 counter = counter + 1;
                 startNumber = startNumber + 1;
@@ -36,7 +36,7 @@
             <li>Undefined</li>
         </ul>
         <label>Enter a value</label>
-        <input type="number" id="txtStartNumber" placeholder="enter a value" onchange="onChangeAdd()" />
+        <input type="number" id="txtstartNumber" placeholder="enter a value" onchange="onChangeAdd()" />
         <button id="buttonAdd" onclick="onClickAdd()">Add</button>
         <p id="result"></p>
 
