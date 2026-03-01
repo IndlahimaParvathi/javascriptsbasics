@@ -15,6 +15,7 @@
                 startNumber = startNumber + 1;
                 document.getElementById("result").innerHTML = "Result:" + startNumber + "hima:" + counter;
             }
+
         </script>
     </head>
 
@@ -31,7 +32,7 @@
             <li>Undefined</li>
         </ul>
         <label>Enter a value</label>
-        <input type="number" id="txtStartNumber" placeholder="enter a value" />
+        <input type="number" id="txtStartNumber" placeholder="enter a value" onchange="onChangeAdd" />
         <button id="buttonAdd" onclick="onClickAdd()">Add</button>
         <p id="result"></p>
 
