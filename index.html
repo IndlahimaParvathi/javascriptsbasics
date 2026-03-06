@@ -24,7 +24,9 @@
                 if(count==0){
                      startNumber = parseInt(document.getElementById("txtstartNumber").value);
                 }
-                
+                 counter = counter + 1;
+                startNumber = startNumber + 1;
+                document.getElementById("result").innerHTML = "Result:" + startNumber + "count no:" + counter;
                 counter = 0;
 
             }
