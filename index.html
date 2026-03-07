@@ -28,15 +28,19 @@
                 if (counter === 0) {
                     MultiNumber = parseInt(document.getElementById("txtMultiNumber").value);
                 }
+                MultiNumber = 0
+                MultiNumber =parseInt(document.getElementById("txtMultiNumber").value);
                 counter = counter + 1;
                 MultiNumber = MultiNumber * counter;
                 document.getElementById("Multiresult").innerHTML = "Result:" + MultiNumber + "count no:" + counter;
+              
+                 
 
             }
             function onClicksub() {
                 debugger;
                 if (counter == 0) {
-                    subnumber = (document.getElementById("txtsubnumber").value);
+                    subnumber = parseInt(document.getElementById("txtsubnumber").value);
                 }
                 counter= counter - 1;
                 subnumber= subnumber - counter;
