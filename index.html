@@ -17,7 +17,7 @@
                 startNumber = startNumber + 1;
                 document.getElementById("result").innerHTML = "Result:" + startNumber + "count no:" + counter;
             }
-            function onChangeAdd() {
+            function onChange() {
                 debugger;
                 counter = 0;
             }
@@ -28,12 +28,12 @@
                 if (counter === 0) {
                     MultiNumber = parseInt(document.getElementById("txtMultiNumber").value);
                 }
-                MultiNumber = 0
-                MultiNumber =parseInt(document.getElementById("txtMultiNumber").value);
+                 MultiNumber = parseInt(document.getElementById("txtMultiNumber").value);
+             
                 counter = counter + 1;
                 MultiNumber = MultiNumber * counter;
                 document.getElementById("Multiresult").innerHTML = "Result:" + MultiNumber + "count no:" + counter;
-              
+               
                  
 
             }
@@ -64,12 +64,12 @@
             <li>Undefined</li>
         </ul>
         <label>Enter a value</label>
-        <input type="number" id="txtstartNumber" placeholder="enter a value" onchange="onChangeAdd()" />
+        <input type="number" id="txtstartNumber" placeholder="enter a value" onchange="onChange()" />
         <button id="buttonAdd" onclick="onClickAdd()">Add</button>
         <p id="result"></p>
 
         <label>Enter a value</label>
-        <input type="number" id="txtMultiNumber" placeholder="enter a value">
+        <input type="number" id="txtMultiNumber" placeholder="enter a value" onchange="onChange()">
         <button id="buttonMultify" onclick="onClickMultify()">Multify</button>
         <p id="Multiresult"></p>
 
