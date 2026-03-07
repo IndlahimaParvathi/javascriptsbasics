@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Profit and loss</title>
+<script>
+    function onClickProfitorLoss(){
+        debugger;
+       costPrice= parseInt(document.getElementById("txtCostPrice").value);
+       sellingPrice= parseInt(document.getElementById("txtSellingPrice").value);
+    }
+</script>
+</head>
+
+<body>
+
+    <label>Cost price</label>
+    <input type="number" id="txtCostPrice" /><br>
+
+    <label>Selling price</label>
+    <input type="number" id="txtSellingPrice"/><br>
+    <button id="buttonProfitorLoss" onclick="onClickProfitorLoss()">Profit/Loss</button>
+
+    <p id="pResult">result</p>
+
+</body>
+
+</html>
