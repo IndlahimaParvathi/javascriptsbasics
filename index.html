@@ -6,6 +6,8 @@
         <script>
             var counter = 0;
             var startNumber = 0;
+             var MultiNumber = 0;
+             var subnumber =0;
             function onClickAdd() {
                 debugger;
                 if (counter == 0) {
@@ -20,19 +22,18 @@
                 counter = 0;
             }
 
-
-
-
-
-            var MultiNumber = 0;
+           
             function onClickMultify() {
                 debugger;
-                if(counter === 0){
-                     MultiNumber = parseInt(document.getElementById("txtMultiNumber").value);
+                if (counter === 0) {
+                    MultiNumber = parseInt(document.getElementById("txtMultiNumber").value);
                 }
-                 counter = counter + 1;
+                counter = counter + 1;
                 MultiNumber = MultiNumber * counter;
                 document.getElementById("Multiresult").innerHTML = "Result:" + MultiNumber + "count no:" + counter;
+
+            }
+            function onClicksub() {
 
             }
 
@@ -57,12 +58,12 @@
         <p id="result"></p>
 
         <label>Enter a value</label>
-        <input type="number" id="txtMultiNumber" placeholder="enter a value" >
+        <input type="number" id="txtMultiNumber" placeholder="enter a value">
         <button id="buttonMultify" onclick="onClickMultify()">Multify</button>
         <p id="Multiresult"></p>
 
         <label> enter a value</label>
-        <input type="number" id="txtsubnumber" placeholder="Enter a value"/>
+        <input type="number" id="txtsubnumber" placeholder="Enter a value" />
         <button id="buttonsub" onclick="onClicksub()">subtraction</button>
 
 
