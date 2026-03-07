@@ -19,15 +19,20 @@
                 debugger;
                 counter = 0;
             }
+
+
+
+
+
+            var MultiNumber = 0;
             function onClickMultify() {
                 debugger;
-                if(count==0){
-                     startNumber = parseInt(document.getElementById("txtstartNumber").value);
+                if(counter === 0){
+                     MultiNumber = parseInt(document.getElementById("txtMultiNumber").value);
                 }
                  counter = counter + 1;
-                startNumber = startNumber + 1;
-                document.getElementById("result").innerHTML = "Result:" + startNumber + "count no:" + counter;
-                counter = 0;
+                MultiNumber = MultiNumber * counter;
+                document.getElementById("Multiresult").innerHTML = "Result:" + MultiNumber + "count no:" + counter;
 
             }
 
@@ -50,10 +55,14 @@
         <input type="number" id="txtstartNumber" placeholder="enter a value" onchange="onChangeAdd()" />
         <button id="buttonAdd" onclick="onClickAdd()">Add</button>
         <p id="result"></p>
+
         <label>Enter a value</label>
-        <input type="number" id="txtstartNumber" placeholder="enter a value" >
+        <input type="number" id="txtMultiNumber" placeholder="enter a value" >
         <button id="buttonMultify" onclick="onClickMultify()">Multify</button>
-        <p id="result"></p>
+        <p id="Multiresult"></p>
+
+        <label> enter a value</label>
+        <input type="number" id="txtsubnumber" placeholder="Enter a value"/>
 
 
 
