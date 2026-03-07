@@ -3,15 +3,21 @@
 
         <head>
                 <title>Arithmetic calculations</title>
+                <script>
+                        function onClickAdd() {
+                                var value1 = document.getElementById("txtValue1").value;
+                                var value2 = document.getElementById("txtValue2").value;
+                        } 
+                </script>
         </head>
 
         <body>
                 <label>value1</label>
-                <input type="number" id="txtValue1"/><br>
+                <input type="number" id="txtValue1" /><br>
                 <label>vaule2</label>
-                <input type="number" id="txtValue2"/>
+                <input type="number" id="txtValue2" />
                 <br>
-                <button id="buttonAdd" onclick="onClickAdd()">add</button>
+                <button id="buttonAdd" onclick="onClickAdd()">Add</button>
                 <button id="buttonSub" onclick="onClickSub()">Subtract</button>
                 <button id="buttonMultify" onclick="onClicKMulitify()">Multify</button>
                 <button id="buttonDiv" onclick="onClickDiv()">Divide</button>
