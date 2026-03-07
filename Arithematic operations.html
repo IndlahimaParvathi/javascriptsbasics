@@ -8,17 +8,24 @@
                                 debugger;
                                 var value1 = parseInt(document.getElementById("txtValue1").value);
                                 var value2 = parseInt(document.getElementById("txtValue2").value);
-                        result= value1  + value2;
-                        document.getElementById("pResult").innerHTML= result
-                        } 
-                        function onClickSub(){
+                                result = value1 + value2;
+                                document.getElementById("pResult").innerHTML = result
+                        }
+                        function onClickSub() {
                                 debugger;
                                 var value1 = parseInt(document.getElementById("txtValue1").value);
-                                 var value2 = parseInt(document.getElementById("txtValue2").value);
-                                 result= value1-value2;
-                                  document.getElementById("pResult").innerHTML= result
-                        } 
-                        
+                                var value2 = parseInt(document.getElementById("txtValue2").value);
+                                result = value1 - value2;
+                                document.getElementById("pResult").innerHTML = result
+                        }
+                        function onClicKMultify() {
+                                debugger;
+                                var value1 = parseInt(document.getElementById("txtValue1").value);
+                                var value2 = parseInt(document.getElementById("txtValue2").value);
+                                result = value1 * value2;
+                                document.getElementById("pResult").innerHTML = result
+                        }
+function
                 </script>
         </head>
 
@@ -30,7 +37,7 @@
                 <br>
                 <button id="buttonAdd" onclick="onClickAdd()">Add</button>
                 <button id="buttonSub" onclick="onClickSub()">Subtract</button>
-                <button id="buttonMultify" onclick="onClicKMulitify()">Multify</button>
+                <button id="buttonMultify" onclick="onClicKMultify()">Multify</button>
                 <button id="buttonDiv" onclick="onClickDiv()">Divide</button>
                 <br>
                 <p id="pResult"></p>
