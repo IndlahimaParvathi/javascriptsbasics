@@ -32,3 +32,15 @@
 
             }
             function onClicksub() {
+                debugger;
+                if (counter == 0) {
+                    subnumber = parseInt(document.getElementById("txtsubnumber").value);
+                }
+                 subnumber = parseInt(document.getElementById("txtsubnumber").value);
+                counter= counter + 1;
+                subnumber= subnumber - counter;
+                document.getElementById("subresult").innerHTML= "answer:" + subnumber + "count no:" +counter;
+
+            }
+
+        
