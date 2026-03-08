@@ -12,9 +12,19 @@ transportCost=parseInt(document.getElementById("txtTransportCost").value);
 storageCost=parseInt(document.getElementById("txtStorageCost").value);
 perUnitSellingPrice=parseInt(document.getElementById("txtPerUnitSelleingPrice").value);
 
-totalBoxPrice= boxCostPrice+labourCost+transportCost+storageCost
+totalBoxPrice= boxCostPrice+labourCost+transportCost+storageCost;
 
-perUnitCostPrice=totalBoxPrice/boxQuantity
+perUnitCostPrice=totalBoxPrice/boxQuantity;
+ if(sellingPrice-costPrice>0){
+        document.getElementById("himaResult").innerHTML="profit";
+       }
+       if(sellingPrice-costPrice<0){
+        document.getElementById("himaResult").innerHTML="loss";
+
+       }
+       if(sellingPrice-costPrice==0){
+ document.getElementById("himaResult").innerHTML="no profit no loss";
+       }
 }
 </script>
        </head> 
@@ -33,6 +43,7 @@ perUnitCostPrice=totalBoxPrice/boxQuantity
 <label>Per Unit Selleing Price:</label>
 <input type="number" id="txtPerUnitSelleingPrice"><br>
 <button id="btnsubmit" onclick="onClickSubmit()">Submit</button>
+<p id="himaResult">result</p>
 
 
 <!-- 
