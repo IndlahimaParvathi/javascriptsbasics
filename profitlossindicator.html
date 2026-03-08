@@ -4,12 +4,17 @@
 <title>Profitlossindicator</title>
 <script>
 function onClickSubmit(){
+       debugger;
 boxQuantity=parseInt(document.getElementById("txtBoxQuantity").value);
 boxCostPrice=parseInt(document.getElementById("txtBoxPrice").value);
 labourCost=parseInt(document.getElementById("txtLabourCost").value);
 transportCost=parseInt(document.getElementById("txtTransportCost").value);
 storageCost=parseInt(document.getElementById("txtStorageCost").value);
 perUnitSellingPrice(document.getElementById("txtPerUnitSelleingPrice").value);
+
+TotalboxPrice= BoxCostPrice+LabourCost+TransportCost+StorageCost
+
+perunitcostprice=box/boxQuantity
 }
 </script>
        </head> 
@@ -28,6 +33,11 @@ perUnitSellingPrice(document.getElementById("txtPerUnitSelleingPrice").value);
 <label>Per Unit Selleing Price:</label>
 <input type="number" id="txtPerUnitSelleingPrice"><br>
 <button id="btnsubmit" onclick="onClickSubmit()">Submit</button>
+
+
+
+
+
 
        </body>
     </html>
