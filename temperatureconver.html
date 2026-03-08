@@ -2,11 +2,16 @@
 <html>
     <head>
         <title>Temperature Converter</title>
+        <script>
+function onClickConverterFToC(){
+    cTemperature=parseFloat(document.getElementById("txttemperature").value);
+}
+        </script>
     </head>
     <body>
 <label>Temperature:</label>
-<input type="numnber" > c<br>
-<button id="btnConvertFToC" onclick="onClickconverter()">Convert F to c</button>
+<input type="numnber" id="txttemperature" > c<br>
+<button id="btnConvertCToF" onclick="onClickConverterFToC()">Convert C to F</button>
 
     </body>
 </html>
