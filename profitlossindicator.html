@@ -15,14 +15,14 @@ perUnitSellingPrice=parseInt(document.getElementById("txtPerUnitSelleingPrice").
 totalBoxPrice= boxCostPrice+labourCost+transportCost+storageCost;
 
 perUnitCostPrice=totalBoxPrice/boxQuantity;
- if(sellingPrice-costPrice>0){
+ if(perUnitSellingPrice-perUnitCostPrice>0){
         document.getElementById("himaResult").innerHTML="profit";
        }
-       if(sellingPrice-costPrice<0){
+       if(perUnitSellingPrice-perUnitCostPrice<0){
         document.getElementById("himaResult").innerHTML="loss";
 
        }
-       if(sellingPrice-costPrice==0){
+       if(perUnitSellingPrice-perUnitCostPrice==0){
  document.getElementById("himaResult").innerHTML="no profit no loss";
        }
 }
