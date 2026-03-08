@@ -3,24 +3,31 @@
        <head>
 <title>Profitlossindicator</title>
 <script>
-
+function onClickSubmit(){
+boxQuantity=parseInt(document.getElementById("txtBoxQuantity").value);
+boxCostPrice=parseInt(document.getElementById("txtBoxPrice").value);
+labourCost=parseInt(document.getElementById("txtLabourCost").value);
+transportCost=parseInt(document.getElementById("txtTransportCost").value);
+storageCost=parseInt(document.getElementById("txtStorageCost").value);
+perUnitSellingPrice(document.getElementById("txtPerUnitSelleingPrice").value);
+}
 </script>
        </head> 
        <body>
-<label>Box quantity:</label>
-<input type="number" id="txtBoxQuantity">
-<label>Box price:</label>
-<input type="number" id="txtBoxPrice">
-<label>Labour cost:</label>
-<input type="number" id="txtLabourCost">
-<label>Transport cost:</label>
-<input type="number" id="txtTransportCost">
+<label>Box Quantity:</label>
+<input type="number" id="txtBoxQuantity"><br>
+<label>Box Cost Price:</label>
+<input type="number" id="txtBoxPrice"><br>
+<label>Labour Cost:</label>
+<input type="number" id="txtLabourCost"><br>
+<label>Transport Cost:</label>
+<input type="number" id="txtTransportCost"><br>
 
-<label>Storage cost:</label>
-<input type="number" id="txtStorageCost">
-<label>Per unit cost:</label>
-<input type="number" id="txtPerUnitCost">
-
+<label>Storage Cost:</label>
+<input type="number" id="txtStorageCost"><br>
+<label>Per Unit Selleing Price:</label>
+<input type="number" id="txtPerUnitSelleingPrice"><br>
+<button id="btnsubmit" onclick="onClickSubmit()">Submit</button>
 
        </body>
     </html>
