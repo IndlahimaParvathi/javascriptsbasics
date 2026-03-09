@@ -9,6 +9,13 @@ padding: 4px;
 .Add-a{
     margin-top: 7px;
     width: 79px;
-    background: rgb(231, 208, 212);
+    background: rgb(221, 176, 184);
     height: 30px;
+}
+.sub-a{
+    margin-top: 7px;
+    width: 79px;
+    background: rgb(221, 176, 184);
+    height: 30px;
+    
 }
