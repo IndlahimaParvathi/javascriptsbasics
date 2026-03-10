@@ -11,3 +11,11 @@
     border-radius: 4px;
     margin-bottom: 9px;
 }
+.submit{
+        border-radius: 5px;
+    width: 163px;
+    background: pink;
+    height: 28px;
+    margin-top: 16px;
+
+}
