@@ -1,0 +1,20 @@
+.temp{
+     font-weight: bold;
+    font-size: 17px
+}
+.temp-a{
+  height: 26px;
+    width: 199px;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-bottom: 9px;
+}
+
+.button-a{
+  border-radius: 5px;
+    width: 163px;
+    background: pink;
+    height: 28px;
+    margin-top: 16px;
+
+}
