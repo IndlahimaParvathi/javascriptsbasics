@@ -1,6 +1,9 @@
 function onClickBottle(){
     debugger;
-    bottle=(document.getElementById("txtBottle").value)
-     liter=(document.getElementById("txtliter").value)
+    
+     liters=(document.getElementById("txtLiters").value)
+     bottles=  liters/1.5
+     document.getElementById("pResult").innerHTML=Math.ceil(bottles);
+
 
 }
